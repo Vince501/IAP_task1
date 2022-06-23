@@ -184,5 +184,38 @@ $ git push
 Everything up-to-date
 
 Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
-$
+$ git add .
 
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+Your branch is up to date with 'IAP/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   index.js
+        new file:   log.txt
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git commit -m "index.html updated"
+[master 4678875] index.html updated
+ 3 files changed, 221 insertions(+), 33 deletions(-)
+ rewrite index.html (93%)
+ create mode 100644 log.txt
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.88 KiB | 1.88 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Vince501/IAP_task1.git
+   c0235af..4678875  master -> master
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$
