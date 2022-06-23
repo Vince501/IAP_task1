@@ -1,0 +1,17 @@
+commit 9a9a8af2c297dae0e838de9ba5f7b1ed57f7d2e8
+Author: Vince501 <vincentmugambi2001@gmail.com>
+Date:   Wed Jun 22 22:07:43 2022 +0300
+
+    corrected error in js file
+
+commit d1b3b935a74449d5b56373cece669d318c44e5a9
+Author: Vince501 <vincentmugambi2001@gmail.com>
+Date:   Wed Jun 22 22:02:24 2022 +0300
+
+    Updating style sheet
+
+commit 7383171cfd25fb2e69cbea714424cb2e1c59b492
+Author: Vince501 <vincentmugambi2001@gmail.com>
+Date:   Wed Jun 22 21:56:51 2022 +0300
+
+    First commit

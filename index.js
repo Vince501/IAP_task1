@@ -1,28 +1,47 @@
-window.addEventListener('load', ()=>{
+window.addEventListener('load', ()=> {
+    const form = document.querySelector("#new-task-form");
+    const input = document.querySelector('#new-task-input');
+    const list_el = document.querySelector('#tasks');
 
-    const form = document.querySelector("#new_task_form");
-    const input = document.querySelector('#new_task_input');
-    const list_el = document.querySelector('#tasks')
+    var counter = 0;
 
-    form.addEventListener('submit', (e) => {
+    // COUNTER
+    form.addEventListener('submit', (e) => {        
         e.preventDefault();
 
-        task = input.value;
-        const task_el = document.createElement('div'); 
-        task_el.classList.add('task');
+        counter++;
 
-        const task_content_el = document.createElement('div')
-        task_el.classList.add('content');
+        // Validation of input
+        const tasks = input.value;
+        if (tasks == "") {
+            window.alert("Task Input Empty!!");
+            return false;
+        }
 
-        // how do you link the two?
+        // numbering using counter
+
+        const task = counter + ' - ' + input.value;
+        const task_el = document.createElement('div');
+        task_el.classList.add('task');  
+        
+        // alert notification
+        if(document.getElementById("new-task-input").value.length == 0)
+                {
+                      window.alert("Input Empty! Add task to continue...")
+                      return false;
+                }
+
+        const task_content_el = document.createElement('div');
+        task_content_el.classList.add('content'); 
+
         task_el.appendChild(task_content_el);
 
         const task_input_el = document.createElement('input');
         task_input_el.classList.add('text');
-        task_input_el.type=('text');
+        task_input_el.type='text';
         task_input_el.value=task;
-
-        task_input_el.setAttribute('readonly', 'readonly');
+        
+        task_input_el.setAttribute("readonly", "readonly");
 
         task_content_el.appendChild(task_input_el);
 
@@ -35,7 +54,7 @@ window.addEventListener('load', ()=>{
 
         const task_del_el = document.createElement('button');
         task_del_el.classList.add('delete');
-        task_del_el.innerText='Edit';
+        task_del_el.innerText = 'Delete';
 
         task_action_el.appendChild(task_edit_el);
         task_action_el.appendChild(task_del_el);
@@ -54,11 +73,12 @@ window.addEventListener('load', ()=>{
             }else{
                 task_edit_el.innerText="Edit";
                 task_input_el.setAttribute("readonly","readonly");
-            }
+            } 
         });
 
-        task_del_el.addEventListener('click', (e)=> {
+        task_del_el.addEventListener('click', (e)=>{
             list_el.removeChild(task_el);
         });
+
     });
-});
+})
