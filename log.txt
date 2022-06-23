@@ -1,0 +1,188 @@
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app
+$ git init
+Initialized empty Git repository in C:/Users/Vince/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app/.git/
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git config -global user.name "Vince501"
+error: did you mean `--global` (with two dashes)?
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git config --global user.name "Vince501"
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git config --global user.email "vincentmugambi2001@gmail.com"
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Vince/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app/.git/
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        index.js
+        login.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   login.html
+        new file:   style.css
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   login.html
+        new file:   style.css
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git commit -m "First commit"
+[master (root-commit) 7383171] First commit
+ 4 files changed, 96 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index.js
+ create mode 100644 login.html
+ create mode 100644 style.css
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git commit -m "Updating style sheet"
+[master d1b3b93] Updating style sheet
+ 2 files changed, 176 insertions(+), 2 deletions(-)
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   index.js
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git commit -m "corrected error in js file"
+[master 9a9a8af] corrected error in js file
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.js
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git log > logtext.txt
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git add .
+warning: LF will be replaced by CRLF in logtext.txt.
+The file will have its original line endings in your working directory
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   index.js
+        new file:   logtext.txt
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git commit -m "Assignment Completed"
+[master c0235af] Assignment Completed
+ 3 files changed, 56 insertions(+), 19 deletions(-)
+ create mode 100644 logtext.txt
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$ git push
+Everything up-to-date
+
+Vince@DESKTOP-4APO9S8 MINGW64 ~/OneDrive - Strathmore University/FINAL YEAR/RETAKE/Projects/task_app (master)
+$
+
